@@ -1,1 +1,1 @@
-## AI Training Support
+## AI Training Assistant
