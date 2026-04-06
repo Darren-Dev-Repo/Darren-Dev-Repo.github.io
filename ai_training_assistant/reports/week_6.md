@@ -1,5 +1,36 @@
 # 2026/03/31 Week 6 進度回報：訓練者訓練日誌結構與 Prompt 設計
 > 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1fA09hwy9DPun9yHdjntHFbuQ6Y91ccPPFcA10Q4pae0/edit?tab=t.0)
+> 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)
+<- [Week 5](https://docs.google.com/document/d/1Dj_fMQAJMHkxeaG_5NsKxR5JSTiESkBiNHwY51bTroY/edit?tab=t.0)   
+
+## 【給老師的回覆】關於 RAG 架構的近期演進與本專案的應用展望
+### RAG 簡介與演進概況
+RAG (Retrieval Augumented Generation) 是一項將自然語言處理應用於查詢的方式，其目的是讓 AI 只根據限定的資料回應而非憑空杜撰，降低幻覺機率。   
+傳統的 RAG 根據原本的資料庫，建立一個向量資料庫，查詢時會從中尋找與自然語言輸入中字詞向量相似度最高的結果。這項技術也被稱為「語意檢索」。   
+如今技術層面的突破使得 RAG 技術不再侷限於文字向量檢索，以下簡單說明一些典型的實作方法：
+* Graph RAG: 將不同的資料來源以網狀圖連接，強化 AI 對於知識間的關聯。
+* Adaptive RAG: 系統根據問題難度自動決定檢索路徑。
+* Long Context: 暴力破解法。目前的 LLM 能一次接收數百個 Token 含量的文本，故可以直接將需要查詢的資料寫入 Prompt，而不須切分字詞。
+
+### RAG 實際專案經驗 - [🏋️-Fitness-RAG-Agent-Pipeline](https://github.com/Darren-Dev-Repo/-Fitness-RAG-Agent-Pipeline/)
+除了期初的 Coze 工作流外，2026年3月中下旬，我以ChromaDB實作傳統的語意檢索，根據使用者的文字需求找出適合的健身動作。   
+這份專案讓我了解原始 RAG 的完整流程，對於接下來 AI Training Assistant App 的開發所需的進階 RAG 技術，提供紮實基礎。
+
+### 本專案將採用的 RAG 架構
+ChromaDB 專案達成了語意檢索的功能，但單純的向量檢索無法進行精確的數學運算 (例如課表的重量遞增等進步追蹤指標)，也無法處理帶有時間序列的商業邏輯。因此本專案將採用有狀態的 Hybrid RAG 與 Agentic Workflow 取代傳統靜態檢索，：
+
+1. LLM 意圖解析與強型別約束：
+本週我將重心放在資料庫 Schema 的設計。有別於傳統 RAG 輸出模糊的自然語言，本專案將 LLM 定位為系統的意圖解析器，從。
+透過防禦性 Prompt，強制 LLM 讀取訓練者的真實訓練回饋後，正確輸出為後端程式可運算的 Workout_Log.json 結構。
+
+2. 結構化個人狀態檢索：
+未來的決策引擎在推論前，會先檢索儲存於資料庫中該名訓練者的 Current_State.json (包含各動作當前重量、卡關次數)，讓 LLM 擁有結構化的長期記憶 (狀態)，而非每次對話都從零開始。
+
+3. 動態領域知識注入：
+為解決 Prompt 耦合與幻覺問題，未來將捨棄在 Prompt 中寫死動作名稱的做法。系統會在執行期間先從資料庫撈出合法的動作清單，動態注入到 Prompt 中，約束 LLM 的生成邊界。
+
+4. 狀態凍結與決策引擎：
+當 RAG 檢索出替代動作並完成記錄後，系統將啟動狀態凍結演算法，保護課表的主項目的進度不被替代動作的資料影響，結合 AI 的變動性與軟體工程的確定性。
 
 ## GitHub Page 建立與設計
 本週起，學習進度報告將會公布於我的 GitHub Page 上，提升老師與同學的易讀性。  
