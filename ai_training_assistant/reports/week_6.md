@@ -17,7 +17,7 @@ RAG (Retrieval Augumented Generation) 是一項將自然語言處理應用於查
 這份專案讓我了解原始 RAG 的完整流程，對於接下來 AI Training Assistant App 的開發所需的進階 RAG 技術，提供紮實基礎。
 
 ### 本專案將採用的 RAG 架構
-ChromaDB 專案達成了語意檢索的功能，但單純的向量檢索無法進行精確的數學運算 (例如課表的重量遞增等進步追蹤指標)，也無法處理帶有時間序列的商業邏輯。因此本專案將採用有狀態的 Hybrid RAG 與 Agentic Workflow 取代傳統靜態檢索，：
+ChromaDB 專案達成了語意檢索的功能，但單純的向量檢索無法進行精確的數學運算 (例如課表的重量遞增等進步追蹤指標)，也無法處理帶有時間序列的商業邏輯。因此本專案將採用有狀態的 Hybrid RAG 與 Agentic Workflow 取代傳統靜態檢索：
 
 1. LLM 意圖解析與強型別約束：
 本週我將重心放在資料庫 Schema 的設計。有別於傳統 RAG 輸出模糊的自然語言，本專案將 LLM 定位為系統的意圖解析器，從。
