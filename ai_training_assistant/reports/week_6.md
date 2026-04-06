@@ -1,6 +1,6 @@
 # 2026/03/31 Week 6 進度回報：訓練者訓練日誌結構與 Prompt 設計
-> 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1fA09hwy9DPun9yHdjntHFbuQ6Y91ccPPFcA10Q4pae0/edit?tab=t.0)
-> 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)
+> 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1fA09hwy9DPun9yHdjntHFbuQ6Y91ccPPFcA10Q4pae0/edit?tab=t.0)   
+> 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)   
 <- [Week 5](https://docs.google.com/document/d/1Dj_fMQAJMHkxeaG_5NsKxR5JSTiESkBiNHwY51bTroY/edit?tab=t.0)   
 
 ## 【給老師的回覆】關於 RAG 架構的近期演進與本專案的應用展望
