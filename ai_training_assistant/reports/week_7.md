@@ -177,6 +177,7 @@ The system will input `Next_Training_Output.json`, including exercises, weights,
 * **沒有清晰定位 LLM 的權限**代表自己須清楚並明確界定 LLM 能做到哪些事、存取哪些資訊。如同和人溝通必須站在對方的視角，清楚對方的職責，才能避免代溝。
 
 ## 關於實習
+(待補完)
 
 > 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1cULJvt3Ko2Q5VuhqNMzKcZNMeEUkcqtQt-kXjUtpWfk/edit?tab=t.0)   
 > 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)   
