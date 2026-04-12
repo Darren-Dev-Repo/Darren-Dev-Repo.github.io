@@ -8,12 +8,13 @@
 
 ## 函數呼叫
 > **「就是因為 ChatGPT 它在做文字接龍，所以它很多時候會講一些不是事實的話。」── 李宏毅**   
+
 LLM 的原理是以機率生成文字，並不具備邏輯與算術能力，AI Agent 的其他功能必須外接函數或 API，並藉由 LLM 和這些函數溝通以啟用這些額外功能，而函數呼叫是其中一種實作方式。   
 不過由於本專案使用的範例訓練課表是規則明確的 [Stronglift 5x5](https://stronglifts.com/stronglifts-5x5/workout-program/)，目前 MVP 的 LLM 還不需要呼叫工具。而之後要生成客製化課表時，LLM 就得借助工具的幫忙完成課表。
 
 ## 給訓練者下次訓練內容：所需的後端流程
-Week 6 撰寫了從訓練者自然語言輸入，提取重要資訊並產生當次訓練紀錄 JSON 檔的 Prompts。產生的 Workout_Log.json 裡的值對於決定下一次訓練內容
-必須經過後端業務流程處理邏輯與運算，這些函數用於回傳準確值，避免 LLM 胡言亂語。   
+Week 6 撰寫了從訓練者自然語言輸入，提取重要資訊並產生當次訓練紀錄 JSON 檔的 Prompts。產生的 Workout_Log.json 裡的值為決定下一次訓練內容的基礎。   
+雖然 [Stronglift 5x5](https://stronglifts.com/stronglifts-5x5/workout-program/) 課表的規則已經成熟運行數十年，本系統需要產出的訓練內容仍必須經過後端業務流程處理邏輯與運算求得，這些函數用於回傳準確值，避免 LLM 用機率猜測出錯誤的數值胡言亂語。   
 函數大多數遵守 [Stronglift 5x5](https://stronglifts.com/stronglifts-5x5/workout-program/) 的規則，不過部分的函數也能用於其他課表使用。   
 
 ### Stronglift 5x5 的基本規則
