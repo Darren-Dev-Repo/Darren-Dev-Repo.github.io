@@ -48,7 +48,7 @@ sequenceDiagram
 ```
 
 ## LLM Function Calling 細節
-　　在 AI Agent 的系統裡，函數可以被歸類為工具的一種，在[Week 7 進度報告文件](https://darren-dev-repo.github.io/ai_training_assistant/reports/week_7.html#%E7%B5%A6%E8%A8%93%E7%B7%B4%E8%80%85%E4%B8%8B%E6%AC%A1%E8%A8%93%E7%B7%B4%E5%85%A7%E5%AE%B9%E6%89%80%E9%9C%80%E7%9A%84%E5%BE%8C%E7%AB%AF%E6%B5%81%E7%A8%8B) 也提過工具/函數的用途是提供 LLM 正確答案，讓 Agent 勝任除了單純聊天之外的更多任務。而這次則要說明工具呼叫具體是如何做到的。   
+　　在 AI Agent 的系統裡，函數可以被歸類為工具的一種，在 [Week 7 進度報告文件](https://darren-dev-repo.github.io/ai_training_assistant/reports/week_7.html#%E7%B5%A6%E8%A8%93%E7%B7%B4%E8%80%85%E4%B8%8B%E6%AC%A1%E8%A8%93%E7%B7%B4%E5%85%A7%E5%AE%B9%E6%89%80%E9%9C%80%E7%9A%84%E5%BE%8C%E7%AB%AF%E6%B5%81%E7%A8%8B) 也提過工具/函數的用途是提供 LLM 正確答案，讓 Agent 勝任除了單純聊天之外的更多任務。而這次則要說明工具呼叫具體是如何做到的。   
 ### 工具呼叫流程
 　　平時使用者使用 Gemini 或是其他 AI 助理時，看似是使用者提出需求，AI 給出回應，是一問一答的模式。然而實際上，這中間會經歷[數次系統/開發者和模型間的互動](https://developers.openai.com/api/docs/guides/function-calling#the-tool-calling-flow)。其中最簡單的架構也至少需要兩次來回的溝通 (有點像網路的握手但又不太一樣)：   
 * 第一次溝通: 由系統/開發者端傳遞**工具** (含定義與規格等) 和**文本**給模型，模型根據文本內容選擇需要的工具，並回傳使用該工具的指令給系統。   
