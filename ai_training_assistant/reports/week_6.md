@@ -14,7 +14,7 @@ RAG (Retrieval Augumented Generation) 是一項將自然語言處理應用於查
 * Long Context: 暴力破解法。目前的 LLM 能一次接收數百個 Token 含量的文本，故可以直接將需要查詢的資料寫入 Prompt，而不須切分字詞。
 
 ### RAG 實際專案經驗 - [🏋️-Fitness-RAG-Agent-Pipeline](https://github.com/Darren-Dev-Repo/-Fitness-RAG-Agent-Pipeline/)
-除了期初的 Coze 工作流外，2026年3月中下旬，我以ChromaDB實作傳統的語意檢索，根據使用者的文字需求找出適合的健身動作。   
+除了期初的 Coze 工作流外，2026年3月中下旬，我以 ChromaDB 實作傳統的語意檢索，根據使用者的文字需求找出適合的健身動作。   
 這份專案讓我了解原始 RAG 的完整流程，對於接下來 AI Training Assistant App 的開發所需的進階 RAG 技術，提供紮實基礎。
 
 ### 本專案將採用的 RAG 架構
