@@ -30,6 +30,7 @@ Stronglift 5x5 核心流程 -> 串接運動動作資料庫 -> 重構並串接運
 　　權衡之下，維持權責分離的架構下，讓 Agent 可以呼叫工具，降低函數開發負荷的同時學習完整的 Agent 工作流程。   
 ### 工作流概覽
   
+```mermaid
 sequenceDiagram
     participant User as 訓練者
     participant Agent as AI Agent (決策大腦)
@@ -44,7 +45,8 @@ sequenceDiagram
     Agent->>DB: 查詢該動作的指導要點
     DB-->>Agent: 回傳動作科學知識
     Agent-->>User: 輸出下次訓練計畫 (含數值與情緒價值) 
-   
+```
+
 ## LLM Function Calling 細節
 　　在 AI Agent 的系統裡，函數可以被歸類為工具的一種，在[Week 7 進度報告文件](https://darren-dev-repo.github.io/ai_training_assistant/reports/week_7.html#%E7%B5%A6%E8%A8%93%E7%B7%B4%E8%80%85%E4%B8%8B%E6%AC%A1%E8%A8%93%E7%B7%B4%E5%85%A7%E5%AE%B9%E6%89%80%E9%9C%80%E7%9A%84%E5%BE%8C%E7%AB%AF%E6%B5%81%E7%A8%8B) 也提過工具/函數的用途是提供 LLM 正確答案，讓 Agent 勝任除了單純聊天之外的更多任務。而這次則要說明工具呼叫具體是如何做到的。   
 ### 工具呼叫流程
