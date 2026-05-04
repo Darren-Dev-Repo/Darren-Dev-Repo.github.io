@@ -33,8 +33,8 @@ Stronglift 5x5 核心流程 -> 串接運動動作資料庫 -> 重構並串接運
 ```mermaid
 sequenceDiagram
     participant User as 訓練者
-    participant Agent as AI Agent (決策大腦)
-    participant TS as TS 工具庫 (計算手腳)
+    participant Agent as AI Agent
+    participant TS as TS 工具庫
     participant DB as 動作資料庫
 
     User->>Agent: 輸入訓練紀錄 (Context)
