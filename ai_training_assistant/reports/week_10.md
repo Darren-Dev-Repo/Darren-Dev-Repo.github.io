@@ -2,6 +2,7 @@
 > 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1cULJvt3Ko2Q5VuhqNMzKcZNMeEUkcqtQt-kXjUtpWfk/edit?tab=t.0)   
 > 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)   
 > <- [Week 7](week_7.md)  
+> ______[Week 11](week_11.md) ->
 
 ## 學習重心與專案架構調整
 　　原定專案企圖先藉由 Stronglift 5x5 知名訓練課表實踐核心業務流程，隨後漸漸擴充至一個龐大的系統:    
@@ -196,3 +197,4 @@ class AgentTrainingTools implements ITrainingTools {
 > 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1cULJvt3Ko2Q5VuhqNMzKcZNMeEUkcqtQt-kXjUtpWfk/edit?tab=t.0)   
 > 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)   
 > <- [Week 7](week_7.md)     
+> ______[Week 10](week_10.md) ->
