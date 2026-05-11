@@ -26,6 +26,7 @@
 * 領域知識 (Domain Knowledge)： 將 5x5 的課表規則撰寫成 Stronglift_5x5.md，使 LLM 易於閱讀。   
 * 狀態記憶 (State Memory)： 將使用者的當前訓練目標與連續失敗次數獨立為 Current_State.json。   
 * 動態組裝與行動綱領 (Actionable Rules)： 透過 Node.js 檔案系統 (fs) 動態讀取上述兩者，並在 System Prompt 中加入嚴格的「三階段狀態應對指南（成功、維持、降重）」。明確限縮 LLM 權限，並強制規範輸出格式。   
+
 ```Typescript
 import * as fs from 'fs';
 import * as path from 'path';
