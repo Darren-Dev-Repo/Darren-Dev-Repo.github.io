@@ -179,6 +179,23 @@ async function startAgent() {
 
 startAgent();
 ```   
+   
+### 輸出展示
+```plaintext
+💪🤖 教練：下一次是你的 B 訓練日！請為以下目標重量做好準備：
+
+*   Barbell Squat (槓鈴深蹲): 70 公斤 (5 組 x 5 下)
+
+*   Barbell Overhead Press (槓鈴肩推): 15 公斤 (5 組 x 5 下)
+
+*   Barbell Deadlift (槓鈴硬舉): 60 公斤 (1 組 x 5 下)
+
+
+
+記住，每次訓練都是為了更強大的自己！下次訓練日見！
+```
+
+
 ## 下週規劃
 至此，System Prompt、LLM、Plugin 和 Workflow 的基礎已經完成，第 12 週將專注於:   
 * Memory: 實作 TypeScript 工具，將 LLM 運算完的最新重量寫回 Current_State.json，完成實體記憶迴圈。   
