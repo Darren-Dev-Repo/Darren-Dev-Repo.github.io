@@ -2,6 +2,7 @@
 > 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1weCMuFQa8n2daM_Y-cvmk_X9g0oa0g_aLh4PfEeZhYk/edit?tab=t.wyrl2bljur)   
 > 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)   
 > <- [Week 10](week_10.md)  
+> ______[Week 12](week_12.md) ->   
 
 ## 執行摘要 (Executive Summary)
 本週專案迎來重大突破，成功從架構構想，推進至可運作的 MVP。   
@@ -188,3 +189,4 @@ startAgent();
 > 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1weCMuFQa8n2daM_Y-cvmk_X9g0oa0g_aLh4PfEeZhYk/edit?tab=t.wyrl2bljur)   
 > 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)   
 > <- [Week 10](week_10.md) 
+> ______[Week 12](week_12.md) ->
