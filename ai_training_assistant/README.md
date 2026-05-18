@@ -1,7 +1,8 @@
 ## 🏋️‍♂️ AI 重訓新手輔助員 - 專案進度報告
 這是一個針對繁忙生活的運動新手，提供省時高效自主訓練的 AI 應用程式。
 ### 📅 每週進度目錄
-*   👉 **[最新進度]** [Week 11: 動態提示詞實作與 Gemini API 核心串接 (2026/05/05)](reports/week_11.md)
+*   👉 **[最新進度]** [Week 12: Memory、Guardrails 與 Knowledge Base 的實作 (2026/05/12)](reports/week_12.md)
+*   [Week 11: 動態提示詞實作與 Gemini API 核心串接 (2026/05/05)](reports/week_11.md)
 *   [Week 10: Typescript 函式庫與 LLM 工具規格 (2026/04/28)](reports/week_10.md)
 *   [Week 7: 設計後端流程暨下次訓練說明之系統提示詞 (2026/04/07)](reports/week_7.md)
 *   [Week 6: 訓練者訓練日誌結構與 Prompt 設計 (2026/03/31)](reports/week_6.md)
