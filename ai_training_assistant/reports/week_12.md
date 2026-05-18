@@ -84,7 +84,7 @@ export const myTools: Record<string, Function> = {
 ```
 
 ## 知識庫
-　　我很幸運地找到了 [yuhonas 提供的 free-exercise-db 開源動作資料 (Unlicense license: 可任意下載、使用與修改)](https://github.com/yuhonas/free-exercise-db)，考量到內部的檔案 (不包含圖片) 只有5 MB，且作者已經超過一年沒有更新，便直接下載 exercise.json 作為本專案的知識庫。由於目前專案只需要讓教練做簡單的動作引導查詢，尚不須建置資料庫，只需要透過 TS 函式取得 json 裡的資料即可。
+　　我很幸運地找到了 [yuhonas 提供的 free-exercise-db 開源動作資料 (Unlicense license: 可任意下載、使用與修改)](https://github.com/yuhonas/free-exercise-db)，考量到內部的檔案 (不包含圖片) 只有5 MB，且作者已經超過一年沒有更新，便直接下載 exercise.json 作為本專案的知識庫。由於目前專案只需要讓教練做簡單的動作引導查詢，尚不須建置資料庫，只需要透過 TS 函式取得 json 裡的資料即可。   
 　　不過在實際測試時遇到了小插曲，教練查詢槓鈴肩推的知識時，回報資料庫裡並沒有記錄這個動作。原來，知識庫裡槓鈴肩推使用的名字為 Military Press，而不是 Overhead Press 或 Shoulder Press，導致 LLM 使用這些關鍵字查詢時，找不到 Standing Military Press 的結果。因此我在新增的 queryExercise 工具裡又補上了同義詞的對映，讓 LLM 給出的動作關鍵詞能轉換為可能的相同名稱。  
 
 ```Typescript
