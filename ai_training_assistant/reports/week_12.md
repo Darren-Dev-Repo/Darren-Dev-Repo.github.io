@@ -224,9 +224,9 @@ export const myTools: Record<string, Function> = {
 　　可以看到教練已經能勝任自己的職責，並準備好當一輩子的教練了 (咦？)   
 
 ## 接下來的規畫
-　　有鑑於本週的系統已經具備了所有一個 AI App 會擁有的條件 (System Prompt, LLM, Plugins, Workflow, Knowledge, Memory)，下一週 (Week 13) 將**研究 Tokenoconomics**，並**模擬、統整訓練者使用功能時的花費**，最後預期**完成期末報告**。當週不會撰寫 GitHub Page，取而代之，我會直接繳交期末報告的 pdf 檔案供助教和老師查閱。
-　　Week 14 將會將這份專案做一個收尾，具體會**實作長期的歷史紀錄**、並抽象打包成**可以給訓練者使用的 App**，最後完成部署。
-　　Week 14 過後到期末為止的時間，我會實際使用這個 App 輔助我的訓練，並記錄我的使用情況。
+　　有鑑於本週的系統已經具備了所有一個 AI App 會擁有的條件 (System Prompt, LLM, Plugins, Workflow, Knowledge, Memory)，下一週 (Week 13) 將**研究 Tokenoconomics**，並**模擬、統整訓練者使用功能時的花費**，最後預期**完成期末報告**。當週不會撰寫 GitHub Page，取而代之，我會直接繳交期末報告的 pdf 檔案供助教和老師查閱。   
+　　Week 14 將會將這份專案做一個收尾，具體會**實作長期的歷史紀錄**、並抽象打包成**可以給訓練者使用的 App**，最後完成部署。   
+　　Week 14 過後到期末為止的時間，我會實際使用這個 App 輔助我的訓練，並記錄我的使用情況。   
 
 > 🤖 與 Gemini Pro 的對話記錄連結: [🔗](https://docs.google.com/document/d/1RDTNOVAKQ0UHvHKF0GPSnPwdCxWua6g45BsxafRtHXM/edit?tab=t.0)   
 > 🏋️ Project Repository: [🔗](https://github.com/Darren-Dev-Repo/AI_Training_Assistant)   
